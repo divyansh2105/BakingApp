@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.RecipeDetail"
+    tools:showIn="@layout/activity_recipe_detail"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="40dp">
+
+        <FrameLayout
+            android:id="@+id/frag1_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag2_container"/>
+    </ScrollView>
+
+</LinearLayout>

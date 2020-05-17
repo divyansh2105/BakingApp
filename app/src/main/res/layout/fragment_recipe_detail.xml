@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.RecipeDetailFragment">
+
+
+        <TextView
+            android:id="@+id/label_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/textViewBackground"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="10dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_frag1"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="85dp" />
+
+        <TextView
+            android:id="@+id/label_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="320dp"
+            android:background="@color/textViewBackground"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="10dp"
+            android:text="@string/steps"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp" />
+
+
+
+
+</FrameLayout>
